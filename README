@@ -2,11 +2,12 @@
 
 ## Background
 
-In our efforts to integrate Mandiant's Threat Intelligence (TI) with Microsoft Sentinel, an unforeseen error resulted in the ingestion of over 1.2 million Indicators of Compromise (IOCs) with a score of 0 into our Security Information and Event Management (SIEM) system. Despite reaching out for assistance, no viable solution was provided to revert and clean up these unnecessary IOCs.
+In our efforts to integrate Mandiant's Threat Intelligence (TI) with Microsoft Sentinel, an unforeseen error resulted in the ingestion of over 1.2 million Indicators of Compromise (IOCs) with a score of 0 into our SIEM system.
+no viable solution could be found apart from wait until the expiration date.
 
 ## Motivation
 
-To address this issue and prevent similar situations in the future, I developed this script to automate the process of deleting unnecessary threat intelligence indicators from Microsoft Sentinel.
+To address this issue, I developed this script to automate the process of deleting unnecessary threat intelligence indicators from Microsoft Sentinel.
 
 ## Solution
 
