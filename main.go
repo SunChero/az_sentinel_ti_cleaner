@@ -97,7 +97,7 @@ func main() {
 			}
 			count += deletedCount
 			fmt.Printf("Deleted %d indicators.\n", count)
-			time.Sleep(1 * time.Second) // Add sleep to prevent potential rate limiting
+			time.Sleep(5 * time.Second) // Add sleep to prevent potential rate limiting
 		}
 	}
 }

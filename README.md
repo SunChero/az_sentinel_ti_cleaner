@@ -2,8 +2,9 @@
 
 ## Background
 
-In our efforts to integrate Mandiant's Threat Intelligence (TI) with Microsoft Sentinel, an unforeseen error resulted in the ingestion of over 1.2 million Indicators of Compromise (IOCs) with a score of 0 into our SIEM system.
-no viable solution could be found apart from wait until the expiration date.
+In our security operations, we encountered a critical issue where an unexpected influx of thousands of Indicators of Compromise (IOCs) was injected by one of our threat intelligence providers. The sheer volume of these IOCs, combined with the lack of an efficient cleanup mechanism, created significant operational challenges.
+Existing solutions for managing and removing these IOCs were either impractical or required waiting for the natural expiration of the indicators. 
+
 
 ## Motivation
 
