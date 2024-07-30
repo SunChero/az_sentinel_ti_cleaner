@@ -48,20 +48,36 @@ This repository contains a Go script that utilizes the Microsoft Azure API to de
 
 3. **Run Script:**: Run the script with the required parameters:
    ```sh
-        go run main.go --source="Mandiant" --minConfidence=0 --maxConfidence=70
+        go run main.go --source="Mandiant" 
+         --subscription="az_sentinel_subscription" \
+        --resourceGroup="az_sentinel_resourceGroup" \
+        --workspace="az_sentinel_workspace" \
+        --minConfidence=0 \ 
+        --maxConfidence=70 
+       
+        
    ```
 ### Command-Line Arguments
 
--    `--source`: Specify the source of threat intelligence indicators (default: "Mandiant").
--   `--minConfidence`: Specify the minimum confidence level (default: 0).
-- `--maxConfidence`: Specify the maximum confidence level (default: 70).
+-  `--subscription`: Specify the Azure subscription id REQUIRED (default: none).
+-  `--resourceGroup`: Specify the Azure sentinel resource group REQUIRED (default: none).
+-  `--workspace`: Specify the Azure sentinel workspace REQUIRED (default: none).
+-  `--source`: Specify the source of threat intelligence indicators (default: "Mandiant").
+-  `--minConfidence`: Specify the minimum confidence level (default: 0).
+-  `--maxConfidence`: Specify the maximum confidence level (default: 50).
+
 
 
 ### Example
 To delete threat intelligence indicators from the "Mandiant" source with a confidence level between 0 and 70:
 
 ```sh
-    go run main.go --source="Mandiant" --minConfidence=0 --maxConfidence=70
+    go run main.go --source="Mandiant" \ 
+    --subscription="az_sentinel_subscription" \
+    --resourceGroup="az_sentinel_resourceGroup" \
+    --workspace="az_sentinel_workspace" \
+    --minConfidence=0 \
+    --maxConfidence=70  
 ```
 
 
