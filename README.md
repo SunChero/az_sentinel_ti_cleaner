@@ -36,8 +36,8 @@ This repository contains a Go script that utilizes the Microsoft Azure API to de
 
 1. **Clone Repository**: Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/threat-intelligence-cleanup.git
-   cd threat-intelligence-cleanup
+   git clone https://github.com/SunChero/az_sentinel_ti_cleaner.git
+   cd az_sentinel_ti_cleaner
    ```
 
 
