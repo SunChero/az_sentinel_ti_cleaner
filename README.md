@@ -2,7 +2,7 @@
 
 ## Background
 
-In our security operations, we encountered a critical issue where an unexpected influx of thousands of Indicators of Compromise (IOCs) was injected by one of our threat intelligence providers. The sheer volume of these IOCs, combined with the lack of an efficient cleanup mechanism, created significant operational challenges.
+we faced a critical issue where an unexpected influx of thousands of Indicators of Compromise (IOCs) was injected by one of our threat intelligence providers. The sheer volume of these IOCs, combined with the lack of an efficient cleanup mechanism, created significant operational challenges.
 Existing solutions for managing and removing these IOCs were either impractical or required waiting for the natural expiration of the indicators. 
 
 
